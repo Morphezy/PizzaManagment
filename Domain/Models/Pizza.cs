@@ -2,7 +2,7 @@
 
 public class Pizza
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
     public string CustomerName { get; set; }
     public float Diameter { get; set; }
     public bool IsSliced { get; set; }
@@ -17,4 +17,6 @@ public class Pizza
     public bool Chicken { get; set; }
     public bool Egg { get; set; }
     public DateTime OrderedAt { get; set; }
+    public int OrderId { get; set; }
+    public Order Order { get; set; }
 }
