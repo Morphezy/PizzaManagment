@@ -1,9 +1,9 @@
-﻿using Application.DataBase.DBConfig;
-using Domain.Models;
+﻿using Domain.Models;
+using Infrastructure.DataBase.DBConfig;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.DataBase;
+namespace Infrastructure.DataBase;
 
 public class ApplicationDbContext : IdentityDbContext<Customer>
 {

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Application.DataBase.DBConfig;
+namespace Infrastructure.DataBase.DBConfig;
 
 public class OrdersConfig : IEntityTypeConfiguration<Order>
 {
