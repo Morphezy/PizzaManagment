@@ -5,12 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.DataBase;
 
-public class ApplicationDbContext : IdentityDbContext<Customer>
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<Customer>(options)
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-
     public DbSet<Order> Orders { get; set; }
     public DbSet<Pizza> Pizzas { get; set; }
+    public DbSet<PendingOrder> PendingOrders { get; set; }
     
     protected override void OnModelCreating(ModelBuilder builder)
     {
