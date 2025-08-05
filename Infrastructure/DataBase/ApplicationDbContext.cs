@@ -9,7 +9,6 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 {
     public DbSet<Order> Orders { get; set; }
     public DbSet<Pizza> Pizzas { get; set; }
-    public DbSet<PendingOrder> PendingOrders { get; set; }
     
     protected override void OnModelCreating(ModelBuilder builder)
     {
